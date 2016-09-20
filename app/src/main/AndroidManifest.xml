@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jairbsena.raliuninorte">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RALI_UNINORTE">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Actividad2" />
+        <activity android:name=".Actividad3" />
+        <activity android:name=".Actividad4" />
+        <activity android:name=".Actividad5" />
+        <activity android:name=".Actividad1"></activity>
+    </application>
+
+</manifest>

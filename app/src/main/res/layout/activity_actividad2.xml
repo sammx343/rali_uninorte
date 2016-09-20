@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jairbsena.raliuninorte.Actividad2">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juego de lectura crítica.\n \n
+Adivina el lugar dentro de la Universidad del Norte según la descripción dada y encuéntralo.
+
+Luego, se despliega un texto que debes leer con atención para contestar una pregunta relacionada .
+
+Son 5 lugares, 5 textos y 5 preguntas para completar el recorrido.
+
+Cada lugar encontrado y cada respuesta correcta suman un punto.
+
+Cada lugar no encontrado y cada respuesta incorrecta restan un punto.
+
+Tienes 25 minutos.
+"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inscribirse en el rali"
+            android:id="@+id/boton"
+            android:layout_gravity="right|bottom"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/nombreusu"
+            android:layout_gravity="left|bottom" />
+
+
+    </FrameLayout>
+</RelativeLayout>
