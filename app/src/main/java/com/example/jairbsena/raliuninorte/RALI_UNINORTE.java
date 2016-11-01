@@ -31,7 +31,7 @@ public class RALI_UNINORTE extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Intent nuevofrom=new Intent(RALI_UNINORTE.this,Actividad1.class);
+                Intent nuevofrom=new Intent(RALI_UNINORTE.this,Actividad2.class);
                 startActivity(nuevofrom);
                 finish();
             }
