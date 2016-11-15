@@ -23,8 +23,6 @@ public class Actividad2 extends AppCompatActivity {
         nombreusu= (TextView)findViewById(R.id.nombreusu);
 
 
-        String Usuario=getIntent().getStringExtra("Usuario");
-        nombreusu.setText(Usuario);
 
 
             boton = (Button) findViewById(R.id.boton);
