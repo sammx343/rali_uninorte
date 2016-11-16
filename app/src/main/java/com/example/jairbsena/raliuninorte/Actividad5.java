@@ -9,15 +9,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class Actividad5 extends AppCompatActivity {
 
-
+    private int PlacesFind;
     private TextView timer;
     private TextView user;
+    private String group;
     private EditText points;
     private EditText descriptionPlace;
+    private ArrayList<Place> places = new ArrayList<>();
+
     private long timeToFinish;
     private Place placeSelect;
 
@@ -37,8 +41,11 @@ public class Actividad5 extends AppCompatActivity {
         Intent b = this.getIntent();
         if (b.getExtras() != null) {
             user.setText(b.getStringExtra("nameU"));
+            group = b.getStringExtra("group");
             points.setText(b.getStringExtra("points"));
             placeSelect = (Place) b.getSerializableExtra("placeSelect");
+            places = (ArrayList<Place>) b.getSerializableExtra("places");
+            PlacesFind = b.getIntExtra("placesFind",0);
             if (!placeSelect.getDescriptionPlace().isEmpty())
                 descriptionPlace.setText(placeSelect.getDescriptionPlace());
             else
@@ -67,11 +74,16 @@ public class Actividad5 extends AppCompatActivity {
     }
 
     public void goText(View view) {
+        PlacesFind +=1;
+        Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
         Intent i = new Intent(Actividad5.this, Actividad6.class);
         i.putExtra("nameU",user.getText().toString());
-        i.putExtra("points",points.getText().toString());
+        i.putExtra("group",group);
+        i.putExtra("points",""+(Integer.parseInt(points.getText().toString())+1));
         i.putExtra("timeToFinish",timeToFinish);
         i.putExtra("placeSelect",placeSelect);
+        i.putExtra("places",places);
+        i.putExtra("placesFind",PlacesFind);
         startActivity(i);
     }
 }

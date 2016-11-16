@@ -26,7 +26,7 @@ public class Actividad3 extends AppCompatActivity {
             public void onClick(View v){
               //  EditText editText = (EditText) findViewById(R.id.editText);
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
-
+                EditText editText = (EditText) findViewById(R.id.editText);
                 if (editText2.getText().toString().isEmpty() ) {
                     if (editText2.getText().toString().isEmpty())
                         editText2.setError("Campo nombre está vacio");
@@ -37,6 +37,8 @@ public class Actividad3 extends AppCompatActivity {
                 else {
                     Intent intento = new Intent(getApplicationContext(), Actividad4.class);
                     intento.putExtra("userName",editText2.getText().toString());
+                    if (!editText.getText().toString().isEmpty())
+                        intento.putExtra("group",editText.getText().toString());
                     startActivity(intento);
                 }
             }

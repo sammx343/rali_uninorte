@@ -12,18 +12,13 @@ import android.widget.TextView;
 
 public class Actividad2 extends AppCompatActivity {
 
-   private Button boton;
-    private TextView nombreusu;
+    private Button boton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad2);
-
-        nombreusu= (TextView)findViewById(R.id.nombreusu);
-
-
-
 
             boton = (Button) findViewById(R.id.boton);
             boton.setOnClickListener(new View.OnClickListener() {

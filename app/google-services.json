@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "112743052390",
+    "firebase_url": "https://raliuninorte.firebaseio.com",
+    "project_id": "raliuninorte",
+    "storage_bucket": "raliuninorte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112743052390:android:f5dcbc60dca2c607",
+        "android_client_info": {
+          "package_name": "com.example.jairbsena.raliuninorte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112743052390-u7cf7bl5lkfun77rmdoum7srl6pv33j3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jairbsena.raliuninorte",
+            "certificate_hash": "0815143371E23C84CBEFF58C278CE24BC5ACC302"
+          }
+        },
+        {
+          "client_id": "112743052390-m55h2jb0enielnbc5imamlkj653iavjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCClRgwVOe6_xNeZKe9E6RbQ-FISjDTMeg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112743052390-m55h2jb0enielnbc5imamlkj653iavjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,8 +19,13 @@
         <activity android:name=".Actividad3" />
         <activity android:name=".Actividad4" />
         <activity android:name=".Actividad5" />
-        <activity android:name=".Actividad6" />
-        <activity android:name=".Actividad7"></activity>
+        <activity
+            android:name=".Actividad6"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Actividad7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Actividad8"></activity>
     </application>
 
 </manifest>

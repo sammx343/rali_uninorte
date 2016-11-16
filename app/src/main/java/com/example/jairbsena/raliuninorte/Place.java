@@ -1,6 +1,7 @@
 package com.example.jairbsena.raliuninorte;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by ftorr on 16/11/2016.
@@ -11,13 +12,13 @@ public class Place implements Serializable {
     public String idBeacon;
     public String textPlace;
     public String questionPlace;
-    public String[] answersPlace;
+    public List<String> answersPlace;
     public String answerCorrect;
 
     public Place() {
     }
 
-    public Place(String descriptionPlace, String idBeacon, String textPlace, String questionPlace, String[] answersPlace, String answerCorrect) {
+    public Place(String descriptionPlace, String idBeacon, String textPlace, String questionPlace, List<String> answersPlace, String answerCorrect) {
         this.descriptionPlace = descriptionPlace;
         this.idBeacon = idBeacon;
         this.textPlace = textPlace;
@@ -58,11 +59,11 @@ public class Place implements Serializable {
         this.questionPlace = questionPlace;
     }
 
-    public String[] getAnswersPlace() {
+    public List<String> getAnswersPlace() {
         return answersPlace;
     }
 
-    public void setAnswersPlace(String[] answersPlace) {
+    public void setAnswersPlace(List<String> answersPlace) {
         this.answersPlace = answersPlace;
     }
 

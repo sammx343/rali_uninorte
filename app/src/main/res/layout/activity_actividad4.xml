@@ -32,10 +32,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empezar el rali "
-                android:id="@+id/button"
+                android:id="@+id/goActivity"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignParentBottom="true"
+                android:onClick="goActivity"
+                android:enabled="false" />
 
         </RelativeLayout>
 
