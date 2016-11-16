@@ -45,13 +45,6 @@ Tienes 25 minutos.
             android:layout_gravity="right|bottom"
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/nombreusu"
-            android:layout_gravity="left|bottom" />
-
 
     </FrameLayout>
 </RelativeLayout>

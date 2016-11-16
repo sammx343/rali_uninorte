@@ -36,6 +36,7 @@ public class Actividad3 extends AppCompatActivity {
                 }
                 else {
                     Intent intento = new Intent(getApplicationContext(), Actividad4.class);
+                    intento.putExtra("userName",editText2.getText().toString());
                     startActivity(intento);
                 }
             }
