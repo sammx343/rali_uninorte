@@ -38,7 +38,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/goText"
-        android:onClick="goText"/>
+        android:onClick="goText"
+        android:elevation="0dp"
+        android:enabled="false" />
 
     <EditText
         android:layout_width="match_parent"
